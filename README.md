@@ -68,7 +68,7 @@ Market Data  ──►  31+ Features  ──►  XGBoost  ──┐
 
 ## 📋 Requirements
 
-Before you start, please refer to the [SETUP Guide](SETUP.md) for detailed instructions on installing Python, setting up your Quotex account, configuring Telegram, and using Git.
+Before you start, please refer to the [SETUP Guide](SETUP.md) for detailed instructions.
 
 *   ✅ **Python 3.10+** installed
 *   ✅ A **Quotex** account (email + password)
@@ -79,72 +79,44 @@ Before you start, please refer to the [SETUP Guide](SETUP.md) for detailed instr
 
 ---
 
-## 🚀 Quick Start (One-Click Run)
-
-If you have already installed the requirements, you can use this shortcut to start the bot instantly.
-
-### ⚡ The "ux" Command Shortcut
-Want to start the bot just by typing `ux` from anywhere? Run this command **once** to set it up:
-
-#### For Linux / VPS / Termux:
-```bash
-echo "alias ux='cd $(pwd)/uxpro && source .venv/bin/activate && python ux.py'" >> ~/.bashrc && source ~/.bashrc
-```
-*Now, whenever you want to trade, just type:* `ux`
-
-#### For Windows (PowerShell):
-```powershell
-function ux { cd "$PSScriptRoot\uxpro"; .\.venv\Scripts\Activate.ps1; python ux.py }; Export-ModuleMember -Function ux
-```
-
----
-
-## 📦 Full Installation
+## 📦 Installation
 
 ### Step 1 — Clone the Repository
-
 ```bash
 git clone https://github.com/Mamun-404/ux-pro-v7-ultra.git
 cd ux-pro-v7-ultra/uxpro
 ```
 
-### Step 2 — Create a Virtual Environment *(Recommended)*
-
+### Step 2 — Setup Environment & Dependencies
 ```bash
-# Create virtual environment
 python -m venv .venv
-```
-
-```bash
-# Activate — Linux / VPS / Mac
-source .venv/bin/activate
-```
-
-```powershell
-# Activate — Windows (PowerShell)
-.venv\Scripts\activate
-```
-
-### Step 3 — Install Dependencies
-
-```bash
+source .venv/bin/activate  # For Windows: .venv\Scripts\activate
 pip install -r req.txt
 ```
 
-### Step 4 — Set the Encryption Key ⚠️ **(Mandatory)**
-
-This key is provided by the bot owner. Without it, the bot **cannot start**. Refer to the [SETUP Guide](SETUP.md) for detailed instructions on setting the `FERNET_KEY`.
-
+### Step 3 — Set Encryption Key & Run
 ```bash
-# Example for Linux / VPS
-export FERNET_KEY="U2-RUEhAuTmeCV3Ty3RNuN2kWj6twbkMeKZI6hmbUbM="
-```
-
-### Step 5 — Run the Bot
-
-```bash
+export FERNET_KEY="YOUR_KEY_HERE"
 python ux.py
 ```
+
+---
+
+## ⚡ Quick Run (One-Click Shortcut)
+
+Already installed everything? Use this shortcut to start the bot instantly by just typing `ux` from anywhere.
+
+### 🚀 Set up "ux" command:
+- **Linux / VPS / Termux:** 
+  ```bash
+  echo "alias ux='cd $(pwd)/uxpro && source .venv/bin/activate && python ux.py'" >> ~/.bashrc && source ~/.bashrc
+  ```
+- **Windows (PowerShell):**
+  ```powershell
+  function ux { cd "$PSScriptRoot\uxpro"; .\.venv\Scripts\Activate.ps1; python ux.py }; Export-ModuleMember -Function ux
+  ```
+
+> 📖 **Want more details?** [Check out the Full Setup Guide here →](SETUP.md#7-set-fernet_key)
 
 ---
 
@@ -237,7 +209,7 @@ ux-pro-v7-ultra/
 You need to set the encryption key before running. Contact the owner to get your key, then:
 
 ```bash
-export FERNET_KEY="U2-RUEhAuTmeCV3Ty3RNuN2kWj6twbkMeKZI6hmbUbM="
+export FERNET_KEY="YOUR_KEY_HERE"
 ```
 
 </details>

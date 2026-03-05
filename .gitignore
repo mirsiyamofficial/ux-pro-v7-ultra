@@ -2,11 +2,6 @@
 serviceAccountKey.json
 .temp_cred.json
 
-# ─── Admin Panel (NEVER upload to GitHub) ───────────────
-admin_dashboard*.html
-admin_panel*.html
-*admin*.html
-
 # ─── Python Cache & Virtual Env ─────────────────────────
 __pycache__/
 *.py[cod]

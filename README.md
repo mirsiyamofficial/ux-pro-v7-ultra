@@ -100,7 +100,7 @@ Before you start, make sure you have:
 ### Step 1 — Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/ux-pro-v7.git
+git clone https://github.com/Mamun-404/ux-pro-v7-ultra.git
 cd ux-pro-v7/uxpro
 ```
 

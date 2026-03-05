@@ -33,31 +33,21 @@ Market Data  ──►  31+ Features  ──►  XGBoost  ──┐
 
 ## ✨ Features
 
-<table>
-<tr>
-<td width="50%">
+### 🤖 AI Engine
 
-**🤖 AI Engine**
-- XGBoost + LightGBM + CatBoost ensemble
-- Adaptive model weighting (last 50 trades)
-- 31+ technical indicators (RSI, MACD, BB, CCI, Williams %R, Momentum...)
-- Auto-adapts to live market performance
+*   XGBoost + LightGBM + CatBoost ensemble
+*   Adaptive model weighting (last 50 trades)
+*   31+ technical indicators (RSI, MACD, BB, CCI, Williams %R, Momentum...)
+*   Auto-adapts to live market performance
 
-</td>
-<td width="50%">
+### 📊 Smart Analysis
 
-**📊 Smart Analysis**
-- Market Regime Engine (Trending / Ranging / Volatile / Calm)
-- Multi-Timeframe Confirmation (1m / 5m / 15m)
-- Confidence scoring per signal
-- Per-asset & per-timeframe performance analytics
+*   Market Regime Engine (Trending / Ranging / Volatile / Calm)
+*   Multi-Timeframe Confirmation (1m / 5m / 15m)
+*   Confidence scoring per signal
+*   Per-asset & per-timeframe performance analytics
 
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-**⚙️ Trading Modes**
+### ⚙️ Trading Modes
 
 | Mode | Risk | Best For |
 |------|------|----------|
@@ -66,19 +56,13 @@ Market Data  ──►  31+ Features  ──►  XGBoost  ──┐
 | `AGGRESSIVE` | 🟠 High | Experienced |
 | `ELITE` | 🔴 Max | Experts only |
 
-</td>
-<td width="50%">
+### 🔒 Security
 
-**🔒 Security**
-- Hardware-locked device binding (no file storage)
-- Firebase remote license validation
-- Encrypted license cache (device-derived key)
-- Obfuscated + Fernet-encrypted core logic
-- Anti-debug self-destruct system
-
-</td>
-</tr>
-</table>
+*   Hardware-locked device binding (no file storage)
+*   Firebase remote license validation
+*   Encrypted license cache (device-derived key)
+*   Obfuscated + Fernet-encrypted core logic
+*   Anti-debug self-destruct system
 
 ---
 
@@ -86,12 +70,12 @@ Market Data  ──►  31+ Features  ──►  XGBoost  ──┐
 
 Before you start, make sure you have:
 
-- ✅ **Python 3.10+** installed
-- ✅ A **Quotex** account (email + password)
-- ✅ A **Telegram Bot Token** — get one from [@BotFather](https://t.me/BotFather)
-- ✅ Your **Telegram Chat ID** — get it from [@userinfobot](https://t.me/userinfobot)
-- ✅ A valid **UX PRO License Key** — contact [@U9KNOWN_X](https://t.me/U9KNOWN_X)
-- ✅ A **FERNET_KEY** — provided by the bot owner after purchase
+*   ✅ **Python 3.10+** installed
+*   ✅ A **Quotex** account (email + password)
+*   ✅ A **Telegram Bot Token** — get one from [@BotFather](https://t.me/BotFather)
+*   ✅ Your **Telegram Chat ID** — get it from [@userinfobot](https://t.me/userinfobot)
+*   ✅ A valid **UX PRO License Key** — contact [@U9KNOWN_X](https://t.me/U9KNOWN_X)
+*   ✅ A **FERNET_KEY** — provided by the bot owner after purchase
 
 ---
 
@@ -133,18 +117,18 @@ This key is provided by the bot owner. Without it, the bot **cannot start**.
 
 ```bash
 # Linux / VPS
-export FERNET_KEY="your-fernet-key-here"
+export FERNET_KEY="U2-RUEhAuTmeCV3Ty3RNuN2kWj6twbkMeKZI6hmbUbM=Here"
 ```
 
 ```powershell
 # Windows (PowerShell)
-$env:FERNET_KEY="your-fernet-key-here"
+$env:FERNET_KEY="U2-RUEhAuTmeCV3Ty3RNuN2kWj6twbkMeKZI6hmbUbM=Here"
 ```
 
 > 💡 **Tip for VPS:** Add the key to your shell profile so it loads automatically on reboot:
 
 ```bash
-echo 'export FERNET_KEY="your-fernet-key-here"' >> ~/.bashrc && source ~/.bashrc
+echo 'export FERNET_KEY="U2-RUEhAuTmeCV3Ty3RNuN2kWj6twbkMeKZI6hmbUbM=Here"' >> ~/.bashrc && source ~/.bashrc
 ```
 
 ### Step 5 — Run the Bot
@@ -278,7 +262,7 @@ UX PRO uses a **5-layer security system** to protect source code and prevent una
 You need to set the encryption key before running. Contact the owner to get your key, then:
 
 ```bash
-export FERNET_KEY="your-key-here"
+export FERNET_KEY="U2-RUEhAuTmeCV3Ty3RNuN2kWj6twbkMeKZI6hmbUbM=Here"
 ```
 
 </details>

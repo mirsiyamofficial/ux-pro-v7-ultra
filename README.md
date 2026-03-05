@@ -68,7 +68,7 @@ Market Data  ──►  31+ Features  ──►  XGBoost  ──┐
 
 ## 📋 Requirements
 
-Before you start, make sure you have:
+Before you start, please refer to the [SETUP Guide](SETUP.md) for detailed instructions on installing Python, setting up your Quotex account, configuring Telegram, and using Git.
 
 *   ✅ **Python 3.10+** installed
 *   ✅ A **Quotex** account (email + password)
@@ -113,22 +113,11 @@ pip install -r req.txt
 
 ### Step 4 — Set the Encryption Key ⚠️ **(Mandatory)**
 
-This key is provided by the bot owner. Without it, the bot **cannot start**.
+This key is provided by the bot owner. Without it, the bot **cannot start**. Refer to the [SETUP Guide](SETUP.md) for detailed instructions on setting the `FERNET_KEY`.
 
 ```bash
-# Linux / VPS
-export FERNET_KEY="U2-RUEhAuTmeCV3Ty3RNuN2kWj6twbkMeKZI6hmbUbM=Here"
-```
-
-```powershell
-# Windows (PowerShell)
-$env:FERNET_KEY="U2-RUEhAuTmeCV3Ty3RNuN2kWj6twbkMeKZI6hmbUbM=Here"
-```
-
-> 💡 **Tip for VPS:** Add the key to your shell profile so it loads automatically on reboot:
-
-```bash
-echo 'export FERNET_KEY="U2-RUEhAuTmeCV3Ty3RNuN2kWj6twbkMeKZI6hmbUbM=Here"' >> ~/.bashrc && source ~/.bashrc
+# Example for Linux / VPS
+export FERNET_KEY="U2-RUEhAuTmeCV3Ty3RNuN2kWj6twbkMeKZI6hmbUbM="
 ```
 
 ### Step 5 — Run the Bot
@@ -213,7 +202,8 @@ ux-pro-v7/
 │       ├── http/
 │       └── ws/
 │
-└── README.md
+├── README.md
+└── SETUP.md                   # Comprehensive setup guide
 ```
 
 ---
@@ -262,7 +252,7 @@ UX PRO uses a **5-layer security system** to protect source code and prevent una
 You need to set the encryption key before running. Contact the owner to get your key, then:
 
 ```bash
-export FERNET_KEY="U2-RUEhAuTmeCV3Ty3RNuN2kWj6twbkMeKZI6hmbUbM=Here"
+export FERNET_KEY="U2-RUEhAuTmeCV3Ty3RNuN2kWj6twbkMeKZI6hmbUbM="
 ```
 
 </details>

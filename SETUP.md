@@ -84,7 +84,6 @@ UX PRO VIP interacts with the Quotex trading platform. You need an active Quotex
 ---
 
 ## 3. Telegram Bot Setup
-
 UX PRO VIP uses Telegram for notifications and interaction. You need a Telegram Bot Token and your Chat ID.
 
 ### 🤖 Get a Telegram Bot Token
@@ -159,18 +158,29 @@ cd ux-pro-v7-ultra/uxpro
 
 Using a virtual environment isolates your project's dependencies from other Python projects.
 
+### 💻 Windows (CMD)
+
+```cmd
+# Navigate to your project directory
+cd /d "C:\path\to\ux-pro-v7-ultra\uxpro"
+python -m venv .venv
+.venv\Scripts\activate
+```
+
 ### 💻 Windows (PowerShell)
 
 ```powershell
-# Navigate to your project directory (e.g., cd C:\Users\YourUser\ux-pro-v7-ultra\uxpro)
+# Navigate to your project directory
+cd "C:\path\to\ux-pro-v7-ultra\uxpro"
 python -m venv .venv
-.venv\Scripts\activate
+.\.venv\Scripts\Activate.ps1
 ```
 
 ### 🐧 Linux / macOS / VPS
 
 ```bash
-# Navigate to your project directory (e.g., cd /home/youruser/ux-pro-v7-ultra/uxpro)
+# Navigate to your project directory
+cd /home/youruser/ux-pro-v7-ultra/uxpro
 python3 -m venv .venv
 source .venv/bin/activate
 ```
@@ -190,6 +200,12 @@ pip install -r req.txt
 ## 7. Set FERNET_KEY
 
 This key is crucial for the bot to function. Set it as an environment variable.
+
+### 💻 Windows (CMD)
+
+```cmd
+set FERNET_KEY=tZcmnUPBtWCI7vzLFMowpZjwm4uG_icBYo72y1p6dRQ=
+```
 
 ### 💻 Windows (PowerShell)
 

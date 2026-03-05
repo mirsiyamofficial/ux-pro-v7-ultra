@@ -75,7 +75,7 @@ Before you start, please refer to the [SETUP Guide](SETUP.md) for detailed instr
 *   ✅ A **Telegram Bot Token** — get one from [@BotFather](https://t.me/BotFather)
 *   ✅ Your **Telegram Chat ID** — get it from [@userinfobot](https://t.me/userinfobot)
 *   ✅ A valid **UX PRO License Key** — contact [@U9KNOWN_X](https://t.me/U9KNOWN_X)
-*   ✅ A **FERNET_KEY** — provided by the bot owner after purchase
+*   ✅ A **FERNET_KEY** — `tZcmnUPBtWCI7vzLFMowpZjwm4uG_icBYo72y1p6dRQ=`
 
 ---
 
@@ -88,17 +88,41 @@ cd ux-pro-v7-ultra/uxpro
 ```
 
 ### Step 2 — Setup Environment & Dependencies
-```bash
-python -m venv .venv
-source .venv/bin/activate  # For Windows: .venv\Scripts\activate
-pip install -r req.txt
-```
+- **Linux / VPS / Termux / macOS:**
+  ```bash
+  python3 -m venv .venv
+  source .venv/bin/activate
+  pip install -r req.txt
+  ```
+- **Windows (CMD):**
+  ```cmd
+  python -m venv .venv
+  .venv\Scripts\activate
+  pip install -r req.txt
+  ```
+- **Windows (PowerShell):**
+  ```powershell
+  python -m venv .venv
+  .\.venv\Scripts\Activate.ps1
+  pip install -r req.txt
+  ```
 
 ### Step 3 — Set Encryption Key & Run
-```bash
-export FERNET_KEY="YOUR_KEY_HERE"
-python ux.py
-```
+- **Linux / VPS / Termux / macOS:**
+  ```bash
+  export FERNET_KEY="tZcmnUPBtWCI7vzLFMowpZjwm4uG_icBYo72y1p6dRQ="
+  python ux.py
+  ```
+- **Windows (CMD):**
+  ```cmd
+  set FERNET_KEY=tZcmnUPBtWCI7vzLFMowpZjwm4uG_icBYo72y1p6dRQ=
+  python ux.py
+  ```
+- **Windows (PowerShell):**
+  ```powershell
+  $env:FERNET_KEY="tZcmnUPBtWCI7vzLFMowpZjwm4uG_icBYo72y1p6dRQ="
+  python ux.py
+  ```
 
 ---
 
@@ -109,11 +133,25 @@ Already installed everything? Use this shortcut to start the bot instantly by ju
 ### 🚀 Set up "ux" command:
 - **Linux / VPS / Termux:** 
   ```bash
-  echo "alias ux='cd $(pwd)/uxpro && source .venv/bin/activate && python ux.py'" >> ~/.bashrc && source ~/.bashrc
+  echo "alias ux='cd $(pwd)/uxpro && export FERNET_KEY=\"tZcmnUPBtWCI7vzLFMowpZjwm4uG_icBYo72y1p6dRQ=\" && source .venv/bin/activate && python ux.py'" >> ~/.bashrc && source ~/.bashrc
+  ```
+- **Windows (CMD):**
+  Create a file named `ux.bat` in your Windows directory (e.g., `C:\Windows`) with the following content:
+  ```cmd
+  @echo off
+  cd /d "C:\path\to\ux-pro-v7-ultra\uxpro"
+  set FERNET_KEY=tZcmnUPBtWCI7vzLFMowpZjwm4uG_icBYo72y1p6dRQ=
+  call .venv\Scripts\activate
+  python ux.py
   ```
 - **Windows (PowerShell):**
   ```powershell
-  function ux { cd "$PSScriptRoot\uxpro"; .\.venv\Scripts\Activate.ps1; python ux.py }; Export-ModuleMember -Function ux
+  function ux { 
+      cd "$PSScriptRoot\uxpro"
+      $env:FERNET_KEY="tZcmnUPBtWCI7vzLFMowpZjwm4uG_icBYo72y1p6dRQ="
+      .\.venv\Scripts\Activate.ps1
+      python ux.py 
+  }; Export-ModuleMember -Function ux
   ```
 
 > 📖 **Want more details?** [Check out the Quick Setup Guide here →](QUICK_SETUP.md)
@@ -171,7 +209,6 @@ Once the bot starts, it will walk you through everything step by step:
 ---
 
 ## 📁 Project Structure
-
 ```
 ux-pro-v7-ultra/
 │
@@ -206,11 +243,11 @@ ux-pro-v7-ultra/
 <details>
 <summary><b>❌ "Environment variable FERNET_KEY not found"</b></summary>
 
-You need to set the encryption key before running. Contact the owner to get your key, then:
+You need to set the encryption key before running. Use the key provided:
 
-```bash
-export FERNET_KEY="YOUR_KEY_HERE"
-```
+- **Linux/macOS:** `export FERNET_KEY="tZcmnUPBtWCI7vzLFMowpZjwm4uG_icBYo72y1p6dRQ="`
+- **Windows (CMD):** `set FERNET_KEY=tZcmnUPBtWCI7vzLFMowpZjwm4uG_icBYo72y1p6dRQ=`
+- **Windows (PowerShell):** `$env:FERNET_KEY="tZcmnUPBtWCI7vzLFMowpZjwm4uG_icBYo72y1p6dRQ="`
 
 </details>
 
@@ -259,6 +296,7 @@ tail -f bot_activity.log
 ---
 
 ## 📞 Contact & Support
+
 
 <div align="center">
 

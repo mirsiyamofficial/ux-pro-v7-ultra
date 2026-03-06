@@ -19,4 +19,3 @@ cryptography
 pytz
 matplotlib
 firebase-admin
-cffi

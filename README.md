@@ -1,21 +1,13 @@
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0d1a,50:00d4ff,100:8b5cf6&height=200&section=header&text=UX%20PRO%20VIP&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=AI-Powered%20Quotex%20Trading%20Bot%20%E2%80%94%20V7%20Ultra%20Secure&descAlignY=58&descSize=18" />
-
-<br/>
+# UX PRO VIP V7 — Ultra Secure
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-00d4ff?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-8b5cf6?style=for-the-badge&logo=linux&logoColor=white)](/)
+[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-8b5cf6?style=for-the-badge&logo=linux&logoColor=white)](#)
 [![License](https://img.shields.io/badge/License-Premium-f59e0b?style=for-the-badge&logo=firebase&logoColor=white)](https://t.me/U9KNOWN_X)
-[![Status](https://img.shields.io/badge/Status-Active-10b981?style=for-the-badge)](/)
+[![Status](https://img.shields.io/badge/Status-Active-10b981?style=for-the-badge)](#)
 [![Telegram](https://img.shields.io/badge/Contact-Telegram-00d4ff?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/U9KNOWN_X)
-
-<br/>
 
 > **⚡ The most advanced AI-powered binary options signal bot for Quotex.**
 > Built with a 3-model AI ensemble, real-time market regime detection, and military-grade license protection.
-
-</div>
 
 ---
 
@@ -34,146 +26,106 @@ Market Data  ──►  31+ Features  ──►  XGBoost  ──┐
 ## ✨ Features
 
 ### 🤖 AI Engine
-
-*   XGBoost + LightGBM + CatBoost ensemble
-*   Adaptive model weighting (last 50 trades)
-*   31+ technical indicators (RSI, MACD, BB, CCI, Williams %R, Momentum...)
-*   Auto-adapts to live market performance
+- XGBoost + LightGBM + CatBoost ensemble
+- Adaptive model weighting (last 50 trades)
+- 31+ technical indicators (RSI, MACD, BB, CCI, Williams %R, Momentum...)
+- Auto-adapts to live market performance
 
 ### 📊 Smart Analysis
-
-*   Market Regime Engine (Trending / Ranging / Volatile / Calm)
-*   Multi-Timeframe Confirmation (1m / 5m / 15m)
-*   Confidence scoring per signal
-*   Per-asset & per-timeframe performance analytics
+- Market Regime Engine (Trending / Ranging / Volatile / Calm)
+- Multi-Timeframe Confirmation (1m / 5m / 15m)
+- Confidence scoring per signal
+- Per-asset & per-timeframe performance analytics
 
 ### ⚙️ Trading Modes
 
 | Mode | Risk | Best For |
-|------|------|----------|
+|---|---|---|
 | `SAFE` | 🟢 Low | Beginners |
 | `NORMAL` | 🟡 Medium | Daily use |
 | `AGGRESSIVE` | 🟠 High | Experienced |
 | `ELITE` | 🔴 Max | Experts only |
 
 ### 🔒 Security
-
-*   Hardware-locked device binding (no file storage)
-*   Firebase remote license validation
-*   Encrypted license cache (device-derived key)
-*   Obfuscated + Fernet-encrypted core logic
-*   Anti-debug self-destruct system
+- Hardware-locked device binding
+- Remote license validation via secure server
+- Session token system (60s expiry, one-time use)
+- Encrypted core — never stored on disk
+- Anti-debug self-destruct system
 
 ---
 
 ## 📋 Requirements
 
-Before you start, please refer to the [SETUP Guide](SETUP.md) for detailed instructions.
-
-*   ✅ **Python 3.10+** installed
-*   ✅ A **Quotex** account (email + password)
-*   ✅ A **Telegram Bot Token** — get one from [@BotFather](https://t.me/BotFather)
-*   ✅ Your **Telegram Chat ID** — get it from [@userinfobot](https://t.me/userinfobot)
-*   ✅ A valid **UX PRO License Key** — contact [@U9KNOWN_X](https://t.me/U9KNOWN_X)
-*   ✅ A **FERNET_KEY** — `tZcmnUPBtWCI7vzLFMowpZjwm4uG_icBYo72y1p6dRQ=`
+- ✅ **Python 3.10+** installed
+- ✅ A **Quotex** account (email + password)
+- ✅ A **Telegram Bot Token** — get one from [@BotFather](https://t.me/BotFather)
+- ✅ Your **Telegram Chat ID** — get it from [@userinfobot](https://t.me/userinfobot)
+- ✅ A valid **UX PRO License Key** — contact [@U9KNOWN_X](https://t.me/U9KNOWN_X)
 
 ---
 
 ## 📦 Installation
 
 ### Step 1 — Clone the Repository
+
 ```bash
 git clone https://github.com/Mamun-404/ux-pro-v7-ultra.git
 cd ux-pro-v7-ultra/uxpro
 ```
 
 ### Step 2 — Setup Environment & Dependencies
-- **Linux / VPS / Termux / macOS:**
-  ```bash
-  python3 -m venv .venv
-  source .venv/bin/activate
-  pip install -r req.txt
-  ```
-- **Windows (CMD):**
-  ```cmd
-  python -m venv .venv
-  .venv\Scripts\activate
-  pip install -r req.txt
-  ```
-- **Windows (PowerShell):**
-  ```powershell
-  python -m venv .venv
-  .\.venv\Scripts\Activate.ps1
-  pip install -r req.txt
-  ```
 
-### Step 3 — Set Encryption Key & Run
-- **Linux / VPS / Termux / macOS:**
-  ```bash
-  export FERNET_KEY="tZcmnUPBtWCI7vzLFMowpZjwm4uG_icBYo72y1p6dRQ="
-  python ux.py
-  ```
-- **Windows (CMD):**
-  ```cmd
-  set FERNET_KEY=tZcmnUPBtWCI7vzLFMowpZjwm4uG_icBYo72y1p6dRQ=
-  python ux.py
-  ```
-- **Windows (PowerShell):**
-  ```powershell
-  $env:FERNET_KEY="tZcmnUPBtWCI7vzLFMowpZjwm4uG_icBYo72y1p6dRQ="
-  python ux.py
-  ```
+**Linux / VPS / Termux / macOS:**
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r req.txt
+```
+
+**Windows (CMD):**
+```cmd
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r req.txt
+```
+
+**Windows (PowerShell):**
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r req.txt
+```
+
+### Step 3 — Run
+
+**Linux / VPS / Termux / macOS:**
+```bash
+python3 ux.py
+```
+
+**Windows:**
+```cmd
+python ux.py
+```
 
 ---
 
-## ⚡ Quick Run (One-Click Shortcut)
-
-Already installed everything? Use this shortcut to start the bot instantly by just typing `ux` from anywhere.
-
-### 🚀 Set up "ux" command:
-- **Linux / VPS / Termux:** 
-  ```bash
-  echo "alias ux='cd $(pwd)/uxpro && export FERNET_KEY=\"tZcmnUPBtWCI7vzLFMowpZjwm4uG_icBYo72y1p6dRQ=\" && source .venv/bin/activate && python ux.py'" >> ~/.bashrc && source ~/.bashrc
-  ```
-- **Windows (CMD):**
-  Create a file named `ux.bat` in your Windows directory (e.g., `C:\Windows`) with the following content:
-  ```cmd
-  @echo off
-  cd /d "C:\path\to\ux-pro-v7-ultra\uxpro"
-  set FERNET_KEY=tZcmnUPBtWCI7vzLFMowpZjwm4uG_icBYo72y1p6dRQ=
-  call .venv\Scripts\activate
-  python ux.py
-  ```
-- **Windows (PowerShell):**
-  ```powershell
-  function ux { 
-      cd "$PSScriptRoot\uxpro"
-      $env:FERNET_KEY="tZcmnUPBtWCI7vzLFMowpZjwm4uG_icBYo72y1p6dRQ="
-      .\.venv\Scripts\Activate.ps1
-      python ux.py 
-  }; Export-ModuleMember -Function ux
-  ```
-
-> 📖 **Want more details?** [Check out the Quick Setup Guide here →](QUICK_SETUP.md)
-
----
-
-## 🎮 How to Use
-
-Once the bot starts, it will walk you through everything step by step:
+## 🎮 How It Works
 
 ```
-⚡ UX PRO VIP V7 — ULTRA SECURE LOADER
----------------------------------------
+python ux.py
 🔑 License Key: _______________
 🔍 Authenticating...
 ✅ Core Unlocked. Launching...
 ```
 
+The bot securely fetches and loads the core from our server using your license key. Nothing sensitive is stored on your machine.
+
 **You will be asked for:**
 
 | # | Input | Description |
-|---|-------|-------------|
+|---|---|---|
 | 1 | Quotex Email | Your Quotex account email |
 | 2 | Quotex Password | Your Quotex account password |
 | 3 | Telegram Bot Token | From [@BotFather](https://t.me/BotFather) |
@@ -187,35 +139,39 @@ Once the bot starts, it will walk you through everything step by step:
 
 ---
 
+## ⚡ Quick Run (One-Click Shortcut)
+
+**Linux / VPS / Termux:**
+```bash
+echo "alias ux='cd $(pwd) && source .venv/bin/activate && python ux.py'" >> ~/.bashrc && source ~/.bashrc
+```
+
+Then just type `ux` to start.
+
+---
+
 ## 💎 Pricing & Access
 
-<div align="center">
-
 | Plan | Price | Duration |
-|------|-------|----------|
+|---|---|---|
 | 🚀 **Starter** | **$2** | 1 Day |
 | 🔥 **Popular** | **$5** | 3 Days |
 | ⭐ **Weekly** | **$10** | 7 Days |
 | 💎 **Monthly** | **$30** | 1 Month |
 
-📌 Full features on all plans &nbsp;|&nbsp; 📌 Instant activation &nbsp;|&nbsp; 📌 Priority support on monthly
-
-<br/>
+📌 Full features on all plans | 📌 Instant activation | 📌 Priority support on monthly
 
 **📩 [Click here to get instant access → @U9KNOWN_X](https://t.me/U9KNOWN_X)**
-
-</div>
 
 ---
 
 ## 📁 Project Structure
+
 ```
 ux-pro-v7-ultra/
 │
 ├── uxpro/
-│   ├── ux.py                  # Obfuscated secure loader (entry point)
-│   ├── ux.py.core             # Encrypted core trading logic
-│   ├── serviceAccountKey.enc  # Encrypted Firebase credentials
+│   ├── ux.py                  # Secure loader (entry point)
 │   ├── req.txt                # Python dependencies
 │   │
 │   ├── models/                # AI model files
@@ -225,88 +181,44 @@ ux-pro-v7-ultra/
 │   │   ├── scalers.pkl
 │   │   └── performance.json
 │   │
-│   └── pyquotex/              # Enhanced Quotex WebSocket API
-│       ├── api.py
-│       ├── stable_api.py
-│       ├── http/
-│       └── ws/
+│   └── pyquotex/              # Quotex WebSocket API
 │
+├── .gitignore
 ├── README.md
-└── SETUP.md                   # Comprehensive setup guide
+└── SETUP.md
 ```
 
 ---
 
-
 ## 🛠️ Troubleshooting
 
-<details>
-<summary><b>❌ "Environment variable FERNET_KEY not found"</b></summary>
+**❌ "Invalid or Expired License"**
+Your license has expired or the key is wrong. Contact [@U9KNOWN_X](https://t.me/U9KNOWN_X) to renew.
 
-You need to set the encryption key before running. Use the key provided:
-
-- **Linux/macOS:** `export FERNET_KEY="tZcmnUPBtWCI7vzLFMowpZjwm4uG_icBYo72y1p6dRQ="`
-- **Windows (CMD):** `set FERNET_KEY=tZcmnUPBtWCI7vzLFMowpZjwm4uG_icBYo72y1p6dRQ=`
-- **Windows (PowerShell):** `$env:FERNET_KEY="tZcmnUPBtWCI7vzLFMowpZjwm4uG_icBYo72y1p6dRQ="`
-
-</details>
-
-<details>
-<summary><b>❌ "Invalid or Expired License"</b></summary>
-
-Your license has expired or the key is wrong. Contact [@U9KNOWN_X](https://t.me/U9KNOWN_X) to renew or verify your key.
-
-</details>
-
-<details>
-<summary><b>❌ "Auth Error: device_id mismatch"</b></summary>
-
+**❌ "Auth Error: device_id mismatch"**
 Your license is bound to a different machine. Contact the owner to reset your device binding.
 
-</details>
+**❌ "Server timeout"**
+Server may be waking up (free tier). Wait 30 seconds and try again.
 
-<details>
-<summary><b>❌ Missing packages / pip errors</b></summary>
-
-Reinstall all dependencies:
-
+**❌ Missing packages / pip errors**
 ```bash
 pip install -r req.txt --upgrade
 ```
+Make sure you're using Python 3.10 or higher.
 
-Make sure you're using Python 3.10 or higher:
-
-```bash
-python --version
-```
-
-</details>
-
-<details>
-<summary><b>❌ Bot keeps disconnecting on VPS</b></summary>
-
-Check that your VPS allows outbound traffic on ports `80` and `443`. Also check the log file for details:
-
-```bash
-tail -f bot_activity.log
-```
-
-</details>
+**❌ Bot keeps disconnecting on VPS**
+Check that your VPS allows outbound traffic on ports `80` and `443`.
 
 ---
 
 ## 📞 Contact & Support
-
-
-<div align="center">
 
 | | |
 |---|---|
 | 👨‍💻 **Developer** | Mamun Hasan (Unknown X) |
 | 📱 **Telegram** | [@U9KNOWN_X](https://t.me/U9KNOWN_X) |
 | 📢 **Channel** | [Unknown X Official](https://t.me/unknown_x_official) |
-
-</div>
 
 ---
 
@@ -316,10 +228,11 @@ tail -f bot_activity.log
 
 ---
 
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8b5cf6,50:00d4ff,100:0d0d1a&height=100&section=footer" />
-
 **© 2025 Unknown X — UX PRO VIP Trading Bot · All Rights Reserved.**
 
-</div>
+---
+
+## 🔗 Related Repositories
+
+- [UX Pro License Server V2](https://github.com/Mamun-404/uxpro-license-server-v2) — Remote license validation backend.
+- [UX Pro V7 Ultra](https://github.com/Mamun-404/ux-pro-v7-ultra) — Main trading bot repository.

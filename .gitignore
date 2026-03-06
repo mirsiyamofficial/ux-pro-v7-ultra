@@ -1,39 +1,42 @@
-# ─── Firebase Credentials ───────────────────────────────
-serviceAccountKey.json
-.temp_cred.json
+# Core & sensitive files — never commit
+ux.py.core
+*.core
+*.enc
+*.key
+crypto.key
 
-# ─── Python Cache & Virtual Env ─────────────────────────
-__pycache__/
-*.py[cod]
-*$py.class
-.venv/
-env/
-
-# ─── Bot Runtime / Session Files ────────────────────────
-.license_cache
-.sys_key
-.dev_id
-bot.pid
+# Credentials & cache
+credentials.enc
 session.json
-.session
-cookies.pkl
+.license_cache
+.dev_id
+.sys_key
+
+# Logs & runtime
+bot_activity.log
+bot.pid
 *.log
+*.pid
 
-# ─── AI Model Files (large, regeneratable) ──────────────
-/uxpro/models/*.pkl
-/uxpro/models/*.json
-!/uxpro/models/performance.json
-!/uxpro/models/training_data.json
-!/uxpro/models/bot_mode.json
-!/uxpro/models/model_weight_stats.json
-!/uxpro/models/performance_extended.json
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+*.egg-info/
 
-# ─── CatBoost Training Info ─────────────────────────────
-/uxpro/catboost_info/
+# CatBoost training output
+catboost_info/
 
-# ─── OS / Editor Junk ───────────────────────────────────
+# Backup files
+*.bak
+
+# OS
 .DS_Store
 Thumbs.db
-.idea/
-.vscode/
-*.swp
+
+# Env files — use Render dashboard instead
+.env

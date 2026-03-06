@@ -76,13 +76,6 @@
 </td>
 <td width="50%">
 
-### 🔒 Ultra Security
-- Session token system (60s TTL, one-time use)
-- Core logic **never stored on disk**
-- Hardware-locked device binding
-- Server-side encryption (XOR + Fernet)
-- Anti-debug self-destruct system
-
 ### ⚡ Performance
 - Real-time WebSocket market data
 - Parallel signal processing

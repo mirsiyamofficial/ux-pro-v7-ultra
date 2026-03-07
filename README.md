@@ -11,7 +11,7 @@
 
 <br/>
 
-![Views](https://komarev.com/ghpvc/?username=Mamun-404&repo=ux-pro-v7-ultra&color=00d4ff&style=for-the-badge&label=👁️+TOTAL+VIEWS)
+![Views](https://komarev.com/ghpvc/?username=Mamun-404&repo=ux-pro-v7-ultra&color=00d4ff&style=for-the-badge&label=👀+TOTAL+VIEWS)
 
 <br/>
 

@@ -11,7 +11,7 @@
 
 <br/>
 
-[![Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FMamun-404%2Fux-pro-v7-ultra&count_bg=%2300D4FF&title_bg=%230d0d1a&icon=eye&icon_color=%23ffffff&title=👁️%20Total%20Views&edge_flat=false)](https://github.com/Mamun-404/ux-pro-v7-ultra)
+![Views](https://komarev.com/ghpvc/?username=Mamun-404&repo=ux-pro-v7-ultra&color=00d4ff&style=for-the-badge&label=👁️+TOTAL+VIEWS)
 
 <br/>
 

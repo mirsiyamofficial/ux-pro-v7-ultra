@@ -18,7 +18,11 @@ class Buy(Base):
         )
         expiration = expiration_time
 
-        if asset.endswith("_otc") and not is_fast_option:
+        # Detect OTC regardless of format: "AUDCHF_otc" or "AUDCHF(OTC)"
+        _asset_upper = asset.upper()
+        _is_otc = asset.endswith("_otc") or "(OTC)" in _asset_upper
+
+        if _is_otc and not is_fast_option:
             option_type = 100
             expiration = duration
 
@@ -33,18 +37,21 @@ class Buy(Base):
             end_time=expiration_time,
         )
 
+        # Support tournament trading: read _tournament_id from api object if set
+        tournament_id = getattr(self.api, "_tournament_id", 0)
+
         payload = {
             "asset": asset,
             "amount": price,
             "time": expiration,
             "action": direction,
             "isDemo": self.api.account_type,
-            "tournamentId": 0,
+            "tournamentId": tournament_id,
             "requestId": request_id,
             "optionType": option_type
         }
 
-        data = f'42["tick"]'
+        data = '42["tick"]'
         self.send_websocket_request(data)
 
         data = f'42["orders/open",{json.dumps(payload)}]'

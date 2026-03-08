@@ -1,6 +1,7 @@
 import time
 import logging
 import asyncio
+from pathlib import Path
 from datetime import datetime
 from . import expiration
 from . import global_value
@@ -217,32 +218,44 @@ class Quotex:
 
         return new_candles
 
-    async def connect(self):
-        self.api = QuotexAPI(
-            self.domain,
-            self.email,
-            self.password,
-            self.lang,
-            resource_path=self.resource_path,
-            user_data_dir=self.user_data_dir
-        )
-        await self.close()
-        self.api.trace_ws = self.debug_ws_enable
-        self.api.session_data = self.session_data
-        self.api.current_asset = self.asset_default
-        self.api.current_period = self.period_default
-        global_value.SSID = self.session_data.get("token")
+    async def connect(self, max_attempts: int = 5):
+        for attempt in range(1, max_attempts + 1):
+            self.api = QuotexAPI(
+                self.domain,
+                self.email,
+                self.password,
+                self.lang,
+                resource_path=self.resource_path,
+                user_data_dir=self.user_data_dir
+            )
+            await self.close()
+            self.api.trace_ws = self.debug_ws_enable
+            self.api.session_data = self.session_data
+            self.api.current_asset = self.asset_default
+            self.api.current_period = self.period_default
+            global_value.SSID = self.session_data.get("token")
 
-        if not self.session_data.get("token"):
-            await self.api.authenticate()
+            if not self.session_data.get("token"):
+                await self.api.authenticate()
 
-        check, reason = await self.api.connect(self.account_is_demo)
+            check, reason = await self.api.connect(self.account_is_demo)
 
-        if not await self.check_connect():
-            logger.debug("Reconnecting on websocket")
-            return await self.connect()
+            if await self.check_connect():
+                return check, reason
 
-        return check, reason
+            logger.warning(f"Connection attempt {attempt}/{max_attempts} failed. Retrying...")
+
+            # Delete stale session file to force fresh login on next attempt (same as app.py pattern)
+            session_file = Path(self.resource_path) / "session.json"
+            if session_file.exists():
+                session_file.unlink()
+                logger.debug("Stale session file removed.")
+                self.session_data = {}
+
+            await asyncio.sleep(2)
+
+        logger.error(f"Failed to connect after {max_attempts} attempts.")
+        return False, "Max connection attempts reached."
 
     async def reconnect(self):
         await self.api.authenticate()

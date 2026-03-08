@@ -13,6 +13,7 @@ from .utils.processor import (
     process_tick,
     aggregate_candle
 )
+from .config_domain import resolve_qx_domain
 from .config import (
     load_session,
     update_session,
@@ -35,7 +36,8 @@ class Quotex:
             root_path=".",
             user_data_dir="browser",
             asset_default="EURUSD",
-            period_default=60
+            period_default=60,
+            domain=None
     ):
         self.size = [
             5,
@@ -71,6 +73,7 @@ class Quotex:
         self.websocket_client = None
         self.websocket_thread = None
         self.debug_ws_enable = False
+        self.domain = domain or resolve_qx_domain()
         self.resource_path = resource_path(root_path)
         session = load_session(user_agent)
         self.session_data = session
@@ -216,7 +219,7 @@ class Quotex:
 
     async def connect(self):
         self.api = QuotexAPI(
-            "qxbroker.com",
+            self.domain,
             self.email,
             self.password,
             self.lang,

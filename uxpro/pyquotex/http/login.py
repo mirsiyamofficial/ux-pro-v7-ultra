@@ -12,14 +12,15 @@ class Login(Browser):
     url = ""
     cookies = None
     ssid = None
-    base_url = 'qxbroker.com'
-    https_base_url = f'https://{base_url}'
 
     def __init__(self, api, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.api = api
         self.html = None
         self.headers = self.get_headers()
+        # Use domain from api if available, fallback to qxbroker.com
+        self.base_url = getattr(api, 'host', 'qxbroker.com')  # QuotexAPI stores domain as self.host
+        self.https_base_url = f'https://{self.base_url}'
         self.full_url = f"{self.https_base_url}/{api.lang}"
 
     def get_token(self):
@@ -108,7 +109,7 @@ class Login(Browser):
     def _get(self):
         return self.send_request(
             method="GET",
-            url=f"f{self.full_url}/trade"
+            url=f"{self.full_url}/trade"
         )
 
     async def _post(self, data):

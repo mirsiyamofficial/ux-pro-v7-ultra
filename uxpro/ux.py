@@ -1,2 +1,220 @@
-# UX-CORE-SYSTEM-LOADER [Build 7.0.4.0]
-import base64 as b64,zlib as z;eval(compile(z.decompress(b64.b64decode("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")),'<string>','exec'))
+# UX-CORE-SYSTEM-LOADER [Build 7.0.5.0]
+import os, sys, time, hashlib, hmac
+import platform, subprocess, uuid
+import json, base64, requests
+from cryptography.fernet import Fernet
+
+LICENSE_CACHE = ".license_cache"
+
+API_URL    = "https://uxpro-license-server-v2-1.onrender.com"
+API_SECRET = "uxpro_9xK2mP_s3cur3_2025"
+
+# ── Load .env for local core decrypt support ─────────────────
+def _load_env():
+    env = {}
+    env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
+    try:
+        with open(env_path) as f:
+            for line in f:
+                line = line.strip()
+                if line and "=" in line and not line.startswith("#"):
+                    k, v = line.split("=", 1)
+                    env[k.strip()] = v.strip()
+    except Exception:
+        pass
+    return env
+
+_ENV = _load_env()
+MASTER_KEY = _ENV.get("MASTER_KEY", "")
+CORE_PATH  = _ENV.get("CORE_PATH", "ux.py.core")
+
+
+class LoaderSecurity:
+    def __init__(self):
+        self.device_id = self._get_device_id()
+        self.cache_key = base64.urlsafe_b64encode(
+            hashlib.sha256(self.device_id.encode()).digest()
+        )
+
+    def _get_device_id(self):
+        factors = [str(uuid.getnode()), platform.node(), platform.processor(), platform.machine()]
+        try:
+            if platform.system() == "Linux":
+                if os.path.exists("/etc/machine-id"):
+                    factors.append(open("/etc/machine-id").read().strip())
+                elif os.path.exists("/var/lib/dbus/machine-id"):
+                    factors.append(open("/var/lib/dbus/machine-id").read().strip())
+            elif platform.system() == "Windows":
+                try:
+                    s = subprocess.check_output("wmic bios get serialnumber",shell=True).decode().split("\n")[1].strip()
+                    factors.append(s)
+                    u = subprocess.check_output("wmic csproduct get uuid",shell=True).decode().split("\n")[1].strip()
+                    factors.append(u)
+                except: pass
+        except: pass
+        return hashlib.sha256("|".join(factors).encode()).hexdigest()
+
+    def _make_sig(self, license_key):
+        msg = f"{license_key}:{self.device_id}"
+        return hmac.new(API_SECRET.encode(), msg.encode(), hashlib.sha256).hexdigest()
+
+    def save_cache(self, license_key):
+        try:
+            f = Fernet(self.cache_key)
+            data = json.dumps({"key": license_key, "ts": time.time()}).encode()
+            with open(LICENSE_CACHE, "wb") as file:
+                file.write(f.encrypt(data))
+        except: pass
+
+    def load_cache(self):
+        if not os.path.exists(LICENSE_CACHE): return None
+        try:
+            f = Fernet(self.cache_key)
+            with open(LICENSE_CACHE, "rb") as file:
+                enc = file.read()
+            data = json.loads(f.decrypt(enc).decode())
+            if time.time() - data.get("ts", 0) > 43200:
+                return None
+            return data.get("key")
+        except: return None
+
+    def verify_and_fetch(self, license_key):
+        try:
+            r1 = requests.post(f"{API_URL}/verify", json={
+                "license_key": license_key,
+                "device_id":   self.device_id,
+                "sig":         self._make_sig(license_key)
+            }, timeout=15)
+            d1 = r1.json()
+
+            if not d1.get("valid"):
+                msgs = {
+                    "not_found":         "\n❌ Invalid License Key",
+                    "inactive":          "\n❌ License is not active",
+                    "expired":           "\n❌ License Expired — contact @U9KNOWN_X",
+                    "revoked":           "\n❌ License Revoked — contact @U9KNOWN_X",
+                    "device_mismatch":   "\n❌ Device mismatch — contact @U9KNOWN_X",
+                    "invalid_signature": "\n❌ Request tampered",
+                    "rate_limited":      "\n❌ Too many requests — try again tomorrow",
+                }
+                print(msgs.get(d1.get("reason",""), f"\n❌ Auth failed: {d1.get('reason')}"))
+                return None
+
+            session_token = d1.get("session_token")
+            session_key   = base64.b64decode(d1.get("session_key",""))
+
+            r2 = requests.post(f"{API_URL}/fetch_core", json={
+                "session_token": session_token,
+                "device_id":     self.device_id,
+            }, timeout=30)
+            d2 = r2.json()
+
+            if "core" not in d2:
+                print(f"\n❌ Core fetch failed: {d2.get('error','unknown')}")
+                return None
+
+            enc_bytes = base64.b64decode(d2["core"])
+            code = bytes(b ^ session_key[i % len(session_key)] for i, b in enumerate(enc_bytes))
+            return code
+
+        except requests.exceptions.ConnectionError:
+            print("\n❌ No internet connection")
+            return None
+        except requests.exceptions.Timeout:
+            print("\n❌ Server timeout — try again")
+            return None
+        except Exception as e:
+            print(f"\n❌ Error: {e}")
+            return None
+
+    def self_destruct(self):
+        print("\n[!] CRITICAL ERROR. WIPING...")
+        root = os.path.dirname(os.path.abspath(__file__))
+        for r, d, files in os.walk(root, topdown=False):
+            for f in files:
+                try:
+                    p = os.path.join(r, f)
+                    with open(p, "wb") as file:
+                        file.write(os.urandom(os.path.getsize(p)))
+                    os.remove(p)
+                except: pass
+        sys.exit(1)
+
+
+# ── LOCAL CORE DECRYPT (no server / no internet needed) ──────
+def decrypt_local_core():
+    """Decrypt ux.py.core using MASTER_KEY from .env and return code bytes."""
+    if not MASTER_KEY:
+        print("\n❌ MASTER_KEY not found in .env — cannot use local decrypt")
+        return None
+    core_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), CORE_PATH)
+    if not os.path.exists(core_file):
+        print(f"\n❌ Core file not found: {core_file}")
+        return None
+    try:
+        f = Fernet(MASTER_KEY.encode())
+        with open(core_file, "rb") as fp:
+            enc_data = fp.read().strip()
+        # Core is stored as base64(fernet(code))
+        raw = base64.b64decode(enc_data)
+        code = f.decrypt(raw)
+        return code
+    except Exception as e:
+        print(f"\n❌ Local core decrypt failed: {e}")
+        return None
+
+
+def main():
+    print("\n⚡ UX PRO VIP V7 — ULTRA SECURE LOADER")
+    print("---------------------------------------")
+    print("  [1] 🌐 Online Launch  (License Key + Server)")
+    print("  [2] 🔓 Local Launch   (Decrypt Core Offline)")
+    print("---------------------------------------")
+
+    mode = input("  Select [1/2] (Enter = 1): ").strip()
+
+    ls = LoaderSecurity()
+
+    if mode == "2":
+        # ── LOCAL CORE DECRYPT MODE ──
+        print("\n🔓 Local Core Decrypt — Authenticating offline...")
+        code = decrypt_local_core()
+        if not code:
+            sys.exit(1)
+        print("✅ Core Decrypted Locally. Launching...\n")
+        time.sleep(0.5)
+        try:
+            exec(compile(code, "<uxpro>", "exec"), globals())
+        except Exception as e:
+            print(f"Launch Failed: {e}")
+            sys.exit(1)
+
+    else:
+        # ── ONLINE LICENSE MODE (default) ──
+        global l_key
+        l_key = ls.load_cache()
+
+        if not l_key:
+            l_key = input("🔑 License Key: ").strip().upper()
+
+        print("🔍 Authenticating...")
+        code = ls.verify_and_fetch(l_key)
+
+        if not code:
+            if os.path.exists(LICENSE_CACHE):
+                os.remove(LICENSE_CACHE)
+            sys.exit(1)
+
+        ls.save_cache(l_key)
+
+        try:
+            print("✅ Core Unlocked. Launching...\n")
+            time.sleep(0.5)
+            exec(compile(code, "<uxpro>", "exec"), globals())
+        except Exception as e:
+            print(f"Launch Failed: {e}")
+            ls.self_destruct()
+
+
+if __name__ == "__main__":
+    main()
